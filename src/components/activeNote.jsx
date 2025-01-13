@@ -73,7 +73,7 @@ function ActiveNote() {
         name="content"
         onInput={HandleChange}
         defaultValue={getActiveNote?.content}
-        className="resize-none min-h-[23rem]"
+        className="resize-none min-h-[21rem]"
       ></textarea>
     </div>
   </form>

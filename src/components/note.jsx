@@ -19,7 +19,12 @@ function Note({ data }) {
   }
 
   function HandleOpen() {
-    setActiveNote(data);
+    setActiveNote(null);
+    setTimeout(() => setActiveNote(data), 0);
+    
+    // this solution requires you to
+    // convert the entire function to async/await
+    // await new Promise(res => setTimeout(res, 1));
   }
 
   return <div className="py-1 px-2 border-2 border-gray-800 rounded-md">
